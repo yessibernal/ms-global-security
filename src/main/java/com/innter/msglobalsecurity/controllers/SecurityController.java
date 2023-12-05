@@ -1,20 +1,13 @@
 package com.innter.msglobalsecurity.controllers;
 
-import com.innter.msglobalsecurity.model.dtos.RolDto;
-import com.innter.msglobalsecurity.model.dtos.UserDto;
 import com.innter.msglobalsecurity.model.dtos.request.SignUpRequest;
 import com.innter.msglobalsecurity.model.dtos.response.JwtResponse;
-import com.innter.msglobalsecurity.model.entities.UserEntity;
-import com.innter.msglobalsecurity.model.repositories.UserRepository;
 import com.innter.msglobalsecurity.services.AuthenticationService;
 import jakarta.validation.Valid;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -23,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
-import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @RestController

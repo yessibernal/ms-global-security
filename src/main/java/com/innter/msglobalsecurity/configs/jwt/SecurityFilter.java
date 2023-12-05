@@ -1,10 +1,8 @@
 package com.innter.msglobalsecurity.configs.jwt;
 
-import com.innter.msglobalsecurity.exceptions.GlobalExceptionHandler;
 import com.innter.msglobalsecurity.model.dtos.RolDto;
 import com.innter.msglobalsecurity.model.dtos.UserSecurityDto;
 import com.innter.msglobalsecurity.services.JwtService;
-import com.innter.msglobalsecurity.services.UserService;
 import io.jsonwebtoken.ClaimJwtException;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

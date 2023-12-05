@@ -37,15 +37,11 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     private JwtRequest parseBasicAuth(String authHeader) {
         String basicAuth = authHeader.substring(6, authHeader.length());
-        System.out.println("aqui1");
         System.out.println(basicAuth);
         byte[] decodeBasicAuth = Base64.getDecoder().decode(basicAuth);
-        System.out.println("aqui2");
         System.out.println(decodeBasicAuth);
         String[] splitBasicAuth = (new String(decodeBasicAuth)).split(":");
-        System.out.println("aqui3");
         System.out.println(splitBasicAuth);
-        System.out.println("aqui4");
         System.out.println(splitBasicAuth[0]);
         System.out.println(splitBasicAuth[1]);
         return JwtRequest.builder()

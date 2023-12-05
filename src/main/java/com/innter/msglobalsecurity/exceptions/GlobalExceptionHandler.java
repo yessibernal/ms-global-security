@@ -2,7 +2,6 @@ package com.innter.msglobalsecurity.exceptions;
 
 import com.innter.msglobalsecurity.model.dtos.response.ErrorResponse;
 import io.jsonwebtoken.ClaimJwtException;
-import io.jsonwebtoken.ExpiredJwtException;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.ConversionNotSupportedException;
 import org.springframework.beans.TypeMismatchException;
