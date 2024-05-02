@@ -3,15 +3,14 @@ spring:
     ansi:
       enabled: ALWAYS
   application:
-    name: textil-ms-security
+    name: sales-point-ms-security
   datasource:
-    url: jdbc:mysql://localhost:3306/erp_security
-    username: user
-    password: 8Yt98#L4g
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:sqlserver://127.0.0.1:1433;databaseName=global_security;trustServerCertificate=true
+    username: sa
+    password: contra4Dmin
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
   jpa:
     show-sql: true
-    database-platform: org.hibernate.dialect.MySQL8Dialect
   jackson:
     property-naming-strategy: SNAKE_CASE
   mvc:

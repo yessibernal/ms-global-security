@@ -34,9 +34,6 @@ import static com.innter.msglobalsecurity.model.constants.UtilConstants.SCOPES;
 @RequiredArgsConstructor
 public class JwtServiceImpl implements JwtService {
 
-    @Value("${token.key}")
-    private String tokenKey;
-
     @Value("${token-private-key}")
     private String  tokenPrivateKey;
 

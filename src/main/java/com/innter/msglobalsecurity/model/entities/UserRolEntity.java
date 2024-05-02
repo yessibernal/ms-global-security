@@ -1,6 +1,5 @@
 package com.innter.msglobalsecurity.model.entities;
 
-
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -13,7 +12,6 @@ import lombok.Setter;
 
 import java.io.Serial;
 import java.io.Serializable;
-
 
 @Getter
 @Setter
@@ -28,12 +26,12 @@ public class UserRolEntity implements Serializable {
     private UserRolKey id;
 
     @ManyToOne(fetch= FetchType.LAZY)
-    @MapsId("id")
+    @MapsId("idUser")
     @JoinColumn(name = "fi_id_user")
     private UserEntity user;
 
     @ManyToOne(fetch= FetchType.LAZY)
-    @MapsId("id")
+    @MapsId("idRol")
     @JoinColumn(name = "fi_id_rol")
     private RolEntity rol;
 
